@@ -1,3 +1,4 @@
+import AddEmployee from "./components/Employee/AddEmployee";
 import EmployeeList from "./components/Employee/EmployeeList";
 
 const App = () => {
@@ -5,8 +6,10 @@ const App = () => {
   return (
     <>
     <p>App Component</p>
-    <EmployeeList></EmployeeList>
     <hr />
+    <AddEmployee></AddEmployee>
+    <hr />
+    <EmployeeList></EmployeeList>
     </>
   )
 
