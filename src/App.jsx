@@ -1,3 +1,4 @@
+import EmployeeDetails from "./components/Employee/EmployeeDetails";
 
 const App = () => {
 
@@ -5,6 +6,7 @@ const App = () => {
     <>
     <p>Hello world!</p>
     <p>Hello world! 2</p>
+    <EmployeeDetails ></EmployeeDetails>
     </>
   )
 
