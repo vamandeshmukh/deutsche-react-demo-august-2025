@@ -5,6 +5,7 @@ const EmployeeList = () => {
     return(
         <>
         <p>Employee List - parent</p>
+        <EmployeeDetails></EmployeeDetails>
         </>
     );
 };

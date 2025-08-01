@@ -1,16 +1,10 @@
 
-const EmployeeDetails = (props) => {
+const EmployeeDetails = () => {
     
     console.log('EmployeeDetails');
-
-    const firstName = "Vaman";
-
     return(
         <>
         <p>Employee Details - Child</p>
-        <p>Name: {firstName}</p>
-        <p>Name: {props.name}</p>
-        <p>Salary: {props.salary}</p>
         </>
     );
 };
