@@ -1,3 +1,4 @@
+
 const App = () => {
 
   return (
@@ -6,8 +7,8 @@ const App = () => {
     <p>Hello world! 2</p>
     </>
   )
-}
 
+}
 export default App;
 
 // function App() {
