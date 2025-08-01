@@ -6,7 +6,8 @@ const App = () => {
     <>
     <p>Hello world!</p>
     <p>Hello world! 2</p>
-    <EmployeeDetails ></EmployeeDetails>
+    <EmployeeDetails></EmployeeDetails>
+    <hr />
     </>
   )
 
