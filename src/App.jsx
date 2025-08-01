@@ -7,8 +7,6 @@ const App = () => {
     <>
     <p>App Component</p>
     <hr />
-    <AddEmployee></AddEmployee>
-    <hr />
     <EmployeeList></EmployeeList>
     </>
   )

@@ -1,7 +1,5 @@
 
 const AddEmployee = () => {
-
-
     return (
         <>
             <p>Add Employee</p>
