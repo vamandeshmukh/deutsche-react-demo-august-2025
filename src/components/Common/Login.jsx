@@ -1,9 +1,11 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
+
 const Login = () => {
 
 
+    const navigate = useNavigate();
     const { user: loggedInUser, setUser: setLoggedInUser } = useContext(UserContext); 
     const [message, setMessage] = useState('');
     const [loginData, setLoginData] = useState({
@@ -25,6 +27,7 @@ const Login = () => {
         if (loginData.username == "vaman") {
             setLoggedInUser(loginData.username);
             setMessage("Logged in successfully!");
+            navigate("/employees");
         }
         else {
             setLoggedInUser(loginData.username);
