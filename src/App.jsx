@@ -1,18 +1,49 @@
-import AddEmployee from "./components/Employee/AddEmployee";
-import EmployeeList from "./components/Employee/EmployeeList";
+import AppRoutes from "./components/Common/AppRoutes";
+import NavBar from './components/Common/NavBar';
 
 const App = () => {
 
   return (
     <>
-    <p>App Component</p>
-    <hr />
-    <EmployeeList></EmployeeList>
+      <NavBar />
+      <AppRoutes />
     </>
   )
 
 }
 export default App;
+
+// import AppRoutes from "./components/Common/AppRoutes";
+
+// const App = () => {
+
+//   return (
+//     <>
+//     <p>App Component</p>
+//     <AppRoutes></AppRoutes>
+//     </>
+//   )
+
+// }
+// export default App;
+
+
+// import AppRoutes from "./components/Common/AppRoutes";
+// import AddEmployee from "./components/Employee/AddEmployee";
+// import EmployeeList from "./components/Employee/EmployeeList";
+
+// const App = () => {
+
+//   return (
+//     <>
+//     <p>App Component</p>
+//     <hr />
+//     <EmployeeList></EmployeeList>
+//     </>
+//   )
+
+// }
+// export default App;
 
 // function App() {
 
