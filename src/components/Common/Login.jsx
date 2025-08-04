@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { UserContext } from "../../context/UserContext";
 const Login = () => {
 
+
+    const { user: loggedInUser, setUser: setLoggedInUser } = useContext(UserContext); 
     const [message, setMessage] = useState('');
     const [loginData, setLoginData] = useState({
         username: '',
@@ -21,9 +23,11 @@ const Login = () => {
         console.log(loginData);
         evt.preventDefault();
         if (loginData.username == "vaman") {
+            setLoggedInUser(loginData.username);
             setMessage("Logged in successfully!");
         }
         else {
+            setLoggedInUser(loginData.username);
             setMessage("Invalid credentials!")
         }
 
@@ -37,6 +41,7 @@ const Login = () => {
                 <p className="lead">Login here to continue</p>
 
                 <div className="col-4">
+                    <p>{loggedInUser}</p>
                     <form onSubmit={handleSubmit} className="form-group">
                         <div className="mb-3">
                             <label htmlFor="username" className="form-label">Username<span className="text-danger">*</span></label>

@@ -1,12 +1,15 @@
 import AppRoutes from "./components/Common/AppRoutes";
 import NavBar from './components/Common/NavBar';
+import { UserProvider } from "./context/UserContext";
 
 const App = () => {
 
   return (
     <>
-      <NavBar />
-      <AppRoutes />
+      <UserProvider>
+        <NavBar />
+        <AppRoutes />
+      </UserProvider>
     </>
   )
 
